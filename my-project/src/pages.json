@@ -1,0 +1,53 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "设置主密钥"
+			}
+		},
+		{
+			"path": "pages/generate/index",
+			"style": {
+				"navigationBarTitleText": "生成密码"
+			}
+		},
+		{
+			"path": "pages/search/index",
+			"style": {
+				"navigationBarTitleText": "管理密码"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+			"van-button": "/wxcomponents/dist/button/index",
+			"van-field": "/wxcomponents/dist/field/index",
+			"van-icon": "/wxcomponents/dist/icon/index",
+			"van-checkbox": "/wxcomponents/dist/checkbox/index",
+			"van-checkbox-group": "/wxcomponents/dist/checkbox-group/index",
+			"van-stepper": "/wxcomponents/dist/stepper/index",
+			"van-dialog": "/wxcomponents/dist/dialog/index"
+		}
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/generate/index",
+				"text": "生成密码",
+				"iconPath": "static/密码.png",
+				"selectedIconPath": "static/密码2.png"
+			},
+			{
+				"pagePath": "pages/search/index",
+				"text": "管理密码",
+				"iconPath": "static/查找.png",
+				"selectedIconPath": "static/查找2.png"
+			}
+		]
+	}
+}
